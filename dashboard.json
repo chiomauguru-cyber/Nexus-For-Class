@@ -1,0 +1,63 @@
+{
+  "assignments": [
+    {
+      "id": 1,
+      "title": "Calculus Problem Set 4",
+      "subject": "Mathematics",
+      "dueDate": "2026-03-15",
+      "status": "Pending"
+    },
+    {
+      "id": 2,
+      "title": "Chemical Bonding Lab Report",
+      "subject": "Science",
+      "dueDate": "2026-03-18",
+      "status": "In Progress"
+    },
+    {
+      "id": 3,
+      "title": "Modern History Essay",
+      "subject": "History",
+      "dueDate": "2026-03-22",
+      "status": "Not Started"
+    }
+  ],
+  "grades": [
+    {
+      "subject": "Mathematics",
+      "score": "92%",
+      "trend": "up"
+    },
+    {
+      "subject": "Science",
+      "score": "88%",
+      "trend": "stable"
+    },
+    {
+      "subject": "History",
+      "score": "95%",
+      "trend": "up"
+    },
+    {
+      "subject": "Language",
+      "score": "91%",
+      "trend": "down"
+    }
+  ],
+  "announcements": [
+    {
+      "id": 1,
+      "title": "Spring Break Schedule",
+      "content": "Spring break will begin on March 25th. All classes will resume on April 2nd.",
+      "date": "2026-03-12",
+      "priority": "high"
+    },
+    {
+      "id": 2,
+      "title": "Science Fair Registration",
+      "content": "Don't forget to register for the annual Science Fair by the end of this week.",
+      "date": "2026-03-10",
+      "priority": "medium"
+    }
+  ]
+}
