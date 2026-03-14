@@ -25,7 +25,7 @@
   },
   {
     "id": "monkey-mart",
-    "title": "Monkey Mart",
+    "title": "Monkey Mart.org",
     "thumbnail": "https://picsum.photos/seed/monkey/400/300",
     "iframeUrl": "https://monkey-mart.gamestores.fun/",
     "category": "Arcade",
@@ -33,7 +33,7 @@
   },
   {
     "id": "graphics-lab",
-    "title": "Smash Karts",
+    "title": "Smash Karts.org",
     "thumbnail": "https://picsum.photos/seed/gokart/400/300",
     "iframeUrl": "https://webgltest-17af1.firebaseapp.com/",
     "category": "Sports",
@@ -49,7 +49,7 @@
   },
   {
     "id": "shell-shockers",
-    "title": "Shell Shockers",
+    "title": "Shell Shockers.org",
     "thumbnail": "https://picsum.photos/seed/egg/400/300",
     "iframeUrl": "https://shellshock.io/",
     "category": "Shooting",
@@ -57,7 +57,7 @@
   },
   {
     "id": "death-by-ai",
-    "title": "Death by AI",
+    "title": "Death by AI.org",
     "thumbnail": "https://picsum.photos/seed/deathai/400/300",
     "iframeUrl": "https://deathbyai.gg/",
     "category": "Arcade",
@@ -65,7 +65,7 @@
   },
   {
     "id": "yohoho-io",
-    "title": "Yohoho.io",
+    "title": "Yohoho.io.org",
     "thumbnail": "https://picsum.photos/seed/yohoho/400/300",
     "iframeUrl": "https://yohoho.io/",
     "category": "Arcade",
@@ -73,7 +73,7 @@
   },
   {
     "id": "retro-bowl",
-    "title": "Retro Bowl",
+    "title": "Retro Bowl.org",
     "thumbnail": "https://picsum.photos/seed/retrobowl/400/300",
     "iframeUrl": "https://retrobowlcollege.co/retro-bowl/",
     "category": "Sports",
