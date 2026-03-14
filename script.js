@@ -20,6 +20,7 @@ const noResults = document.getElementById('no-results');
 const backButton = document.getElementById('back-button');
 const closeButton = document.getElementById('close-button');
 const fullscreenButton = document.getElementById('fullscreen-button');
+const stealthToggle = document.getElementById('stealth-toggle');
 const logo = document.getElementById('logo');
 const yearSpan = document.getElementById('year');
 
@@ -38,6 +39,44 @@ const navDashboard = document.getElementById('nav-dashboard');
 const assignmentsList = document.getElementById('assignments-list');
 const announcementsList = document.getElementById('announcements-list');
 const gradesList = document.getElementById('grades-list');
+
+// Tab Cloaking & Panic Button Logic
+const originalTitle = document.title;
+const originalFavicon = document.querySelector("link[rel*='icon']").href;
+const cloakTitle = "Google Docs";
+const cloakFavicon = "https://ssl.gstatic.com/docs/documents/images/kix-favicon7.ico";
+
+let isCloaked = false;
+
+function toggleCloak(cloak) {
+    if (cloak) {
+        document.title = cloakTitle;
+        document.querySelector("link[rel*='icon']").href = cloakFavicon;
+        isCloaked = true;
+    } else {
+        document.title = originalTitle;
+        document.querySelector("link[rel*='icon']").href = originalFavicon;
+        isCloaked = false;
+    }
+}
+
+// Auto-cloak when tab is hidden
+document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState === 'hidden') {
+        toggleCloak(true);
+    } else {
+        // Optional: uncomment to uncloak when returning
+        // toggleCloak(false);
+    }
+});
+
+// Panic Button (Backtick key)
+window.addEventListener('keydown', (e) => {
+    if (e.key === '`') {
+        // Immediate redirect to a safe site
+        window.location.href = 'https://www.google.com';
+    }
+});
 
 // Set current year
 yearSpan.textContent = new Date().getFullYear();
@@ -278,6 +317,12 @@ fullscreenButton.onclick = () => {
     } else if (resourceIframe.msRequestFullscreen) { /* IE11 */
         resourceIframe.msRequestFullscreen();
     }
+};
+
+stealthToggle.onclick = () => {
+    toggleCloak(!isCloaked);
+    stealthToggle.classList.toggle('text-emerald-500');
+    stealthToggle.classList.toggle('text-zinc-500');
 };
 
 // Start
